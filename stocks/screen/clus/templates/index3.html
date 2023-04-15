@@ -1,0 +1,14 @@
+{% extends 'screen/clus/layout/main.html' %}
+{% block content %}
+        <div class="table-container">
+            <table>
+                {% for row in file_content %}
+                    <tr>
+                        {% for column in row %}
+                            <td>{{ column }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+{% endblock %}
